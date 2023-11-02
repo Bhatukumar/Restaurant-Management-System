@@ -161,17 +161,22 @@ const Cart = ({ userList }) => {
           <Title addClass="text-[40px]">CART TOTAL</Title>
 
           <div className="mt-6">
-            <b>Subtotal: </b>${cart.total} <br />
+            <b>Subtotal: </b>₹{cart.total} <br />
             <b className=" inline-block my-1">Discount: </b>₹0.00 <br />
             <b>Total: </b>₹{cart.total}
           </div>
 
-          <div>
+          <div className="flex flex-col">
             <button
               className="btn-primary mt-4 md:w-auto w-52"
               onClick={createOrder}
             >
               CHECKOUT NOW!
+            </button>
+            <button
+            className="btn-primary mt-4 md:w-auto w-52"
+            >
+              PDF Generater
             </button>
           </div>
         </div>
