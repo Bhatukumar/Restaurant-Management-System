@@ -40,10 +40,11 @@ const Carousel = () => {
           <div className="mt-48  text-white flex flex-col items-start gap-y-10">
             <Title addClass="text-6xl">Fast Food Restaurant</Title>
             <p className="text-sm sm:w-2/5 w-full">
-            "Vrudheshwar Pure Veg" is your go-to vegetarian restaurant,
-              offering a delightful selection of flavorful dishes prepared with
-              the freshest ingredients.
+              &ldquo;Vrudheshwar Pure Veg&rdquo; is your go-to vegetarian
+              restaurant, offering a delightful selection of flavorful dishes
+              prepared with the freshest ingredients.
             </p>
+
             <button className="btn-primary">Order Now</button>
           </div>
         </div>
@@ -51,10 +52,10 @@ const Carousel = () => {
           <div className="relative text-white top-48 flex flex-col items-start gap-y-6">
             <Title addClass="text-6xl">Fast Food Restaurant</Title>
             <p className="text-sm sm:w-2/5 w-full">
-              Located in Pune, we prioritize quality,
-              taste, and customer satisfaction, making every visit a memorable
-              experience for veggie lovers. Join us for a delectable journey
-              through the world of pure vegetarian cuisine.
+              Located in Pune, we prioritize quality, taste, and customer
+              satisfaction, making every visit a memorable experience for veggie
+              lovers. Join us for a delectable journey through the world of pure
+              vegetarian cuisine.
             </p>
             <button className="btn ">Order Now</button>
           </div>
