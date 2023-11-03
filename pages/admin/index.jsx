@@ -74,7 +74,7 @@ const Login = () => {
           ))}
         </div>
         <div className="flex flex-col w-full gap-y-3 mt-6">
-          <button className="btn-primary">LOGIN</button>
+          <button className="btn bg-green-800 p-3 rounded-3xl hover:bg-green-900 text-white">LOGIN</button>
           <Link href="/">
             <span className="text-sm underline cursor-pointer text-secondary">
               Home Page

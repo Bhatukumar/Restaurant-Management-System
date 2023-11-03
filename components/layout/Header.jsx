@@ -16,8 +16,8 @@ const Header = () => {
 
   return (
     <div
-      className={`h-[5.5rem] z-50 relative bg-secondary w-full ${
-        router.asPath === "/" ? "bg-transparent fixed" : "bg-secondary"
+      className={`h-[5.5rem] z-50 relative bg-gray-900 w-full ${
+        router.asPath === "/" ? "bg-transparent fixed" : "bg-gray-900"
       }`}
     >
       <div className="container mx-auto text-white flex justify-between items-center h-full">

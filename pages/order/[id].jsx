@@ -12,8 +12,8 @@ const Order = ({ order }) => {
     <div className="overflow-x-auto">
       <div className="min-h-[calc(100vh_-_433px)] flex  justify-center items-center flex-col p-10  min-w-[1000px]">
         <div className=" flex items-center flex-1  w-full max-h-28">
-          <table className="w-full text-sm text-center text-gray-500">
-            <thead className="text-xs text-gray-400 uppercase bg-gray-700">
+          <table className="w-full text-sm text-center text-gray-400">
+            <thead className="text-xs text-gray-300 uppercase bg-gray-700">
               <tr>
                 <th scope="col" className="py-3 px-6">
                   ORDER ID
@@ -30,7 +30,7 @@ const Order = ({ order }) => {
               </tr>
             </thead>
             <tbody>
-              <tr className="transition-all bg-secondary border-gray-700 hover:bg-primary ">
+              <tr className="transition-all bg-secondary border-gray-700 hover:bg-gray-900 ">
                 <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white flex items-center gap-x-1 justify-center">
                   {order._id.substring(0, 5)}
                 </td>
@@ -47,7 +47,7 @@ const Order = ({ order }) => {
             </tbody>
           </table>
         </div>
-        <div className="flex justify-between w-full p-10 bg-primary mt-6">
+        <div className="flex justify-between w-full p-10 bg-green-600 mt-6">
           <div className={`relative flex flex-col ${statusClass(0)}`}>
             <Image
               src="/images/paid.png"
@@ -76,7 +76,7 @@ const Order = ({ order }) => {
               height={40}
               objectFit="contain"
             />
-            <span>On the way</span>
+            <span>Ready to serve</span>
           </div>
           <div className={`relative flex flex-col ${statusClass(3)}`}>
             <Image
@@ -86,7 +86,7 @@ const Order = ({ order }) => {
               height={40}
               objectFit="contain"
             />
-            <span>Delivered</span>
+            <span>Served</span>
           </div>
         </div>
       </div>

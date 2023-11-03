@@ -84,7 +84,7 @@ const Cart = ({ userList }) => {
           {cart.products.length > 0 ? (
             <div className="max-h-[40rem] overflow-auto">
               <table
-                className="w-full text-sm text-center text-gray-300 min-w-[591px] lg:min-w-[650px] xl:min-w-[1000px] 2xl:min-w-[1250px] lg:min-h-[500px] 
+                className="w-full text-sm text-center text-gray-300 min-w-[591px] lg:min-w-[650px] xl:min-w-[1000px] 2xl:min-w-[1050px] lg:min-h-[300px] 
               md:min-h-[300px]  lg:text-lg"
               >
                 <thead className="text-xs text-gray-200 uppercase bg-gray-700">
@@ -109,10 +109,10 @@ const Cart = ({ userList }) => {
                       className="transition-all bg-secondary border-gray-700 hover:bg-gray-600"
                       key={product._id}
                     >
-                      <td className="py-4 px-0 font-medium whitespace-nowrap hover:text-white ">
+                      <td className="py-2 px-0 font-medium whitespace-nowrap hover:text-white ">
                         <span className="text-white-600">{product.title}</span>
                       </td>
-                      <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
+                      <td className="py-2 px-6 font-medium whitespace-nowrap hover:text-white">
                         {product.extras.length > 0
                           ? product.extras.map((item) => (
                               <span key={item._id}>
@@ -122,10 +122,10 @@ const Cart = ({ userList }) => {
                             ))
                           : "No Extras"}
                       </td>
-                      <td className="py-4 px-2 font-medium whitespace-nowrap hover:text-white">
+                      <td className="py-2 px-2 font-medium whitespace-nowrap hover:text-white">
                       ₹{product.price}
                       </td>
-                      <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
+                      <td className="py-2 px-6 font-medium whitespace-nowrap hover:text-white">
                         <button>
                           <i
                             className="fa-solid fa-chevron-left mr-3 text-white"
@@ -168,16 +168,16 @@ const Cart = ({ userList }) => {
 
           <div className="flex flex-col">
             <button
-              className="btn-primary mt-4 md:w-auto w-52"
+              className="btn bg-green-800 p-3 rounded-3xl mt-4 md:w-auto w-52 hover:bg-green-900"
               onClick={createOrder}
             >
-              CHECKOUT NOW!
+              Make Payment
             </button>
-            <button
+            {/* <button
             className="btn-primary mt-4 md:w-auto w-52"
             >
               PDF Generater
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

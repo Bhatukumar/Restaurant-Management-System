@@ -162,7 +162,9 @@ const Footer = () => {
             onChange={(e) => setIconName(e.target.value)}
             value={iconName}
           />
-          <button className="btn bg-violet-700 p-3 rounded-3xl text-white" type="button" onClick={handleCreate}>
+          <button className="btn bg-violet-700 p-3 rounded-3xl text-white" type="button" 
+          // onClick={handleCreate}
+          >
             Add
           </button>
         </div>
