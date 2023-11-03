@@ -1,5 +1,9 @@
 import axios from "axios";
 import Image from "next/image";
+import { useRef } from 'react';
+import generatePDF from 'react-to-pdf';
+
+import { usePDF } from "react-to-pdf";
 
 const Order = ({ order }) => {
   const status = order?.status;
@@ -8,6 +12,7 @@ const Order = ({ order }) => {
     if (index - status === 1) return "animate-pulse";
     if (index - status > 1) return "";
   };
+  
   return (
     <div className="overflow-x-auto">
       <div className="min-h-[calc(100vh_-_433px)] flex  justify-center items-center flex-col p-10  min-w-[1000px]">
@@ -45,8 +50,12 @@ const Order = ({ order }) => {
                 </td>
               </tr>
             </tbody>
+            
           </table>
         </div>
+        <button onClick={() => generatePDF(targetRef, {filename: 'page.pdf'})}>Download PDF</button>
+       
+  
         <div className="flex justify-between w-full p-10 bg-primary mt-6">
           <div className={`relative flex flex-col ${statusClass(0)}`}>
             <Image
@@ -91,8 +100,11 @@ const Order = ({ order }) => {
         </div>
       </div>
     </div>
+  
   );
+  
 };
+
 
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
@@ -106,3 +118,23 @@ export const getServerSideProps = async ({ params }) => {
 };
 
 export default Order;
+
+const Component = () => {
+  const targetRef = useRef();
+  return (
+     <div>
+        <button onClick={() => generatePDF(targetRef, {filename: 'page.pdf'})}>Download PDF</button>
+        <div ref={targetRef}>
+           Content to be included in the PDF
+        </div>
+     </div>
+  )
+}
+
+
+
+
+
+
+
+
