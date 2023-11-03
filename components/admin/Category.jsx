@@ -75,7 +75,7 @@ const Category = () => {
         <div className="mt-10  max-h-[40rem] overflow-auto p-4 flex flex-col justify-center ">
           {categories.map((category) => (
             <div
-              className="flex justify-between mt-4 border p-3 items-center border-r-4 border-b-8 border-primary rounded-lg hover:border-secondary transition-all"
+              className="flex justify-between mt-4 border p-3 items-center border-r-4 border-b-8 border-indigo-900 rounded-lg hover:border-secondary transition-all"
               key={category._id}
             >
               <b className="sm:text-xl text-md">{category.title}</b>

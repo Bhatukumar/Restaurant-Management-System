@@ -74,7 +74,7 @@ const Search = ({ setIsSearchModal }) => {
                         />
                       </div>
                       <span className="font-bold">{item.title}</span>
-                      <span className="font-bold">${item.prices[0]}</span>
+                      <span className="font-bold">₹{item.prices[0]}</span>
                     </li>
                   ))
                 ) : (
