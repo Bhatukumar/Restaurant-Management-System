@@ -52,10 +52,10 @@ const Customers = () => {
     <div className="container mx-auto mb-20 mt-12">
       <Title addClass="text-[40px] text-center">What Says Our Customers</Title>
       <Slider {...settings}>
-        <CustomerItem imgSrc="/images/client1.jpg" />
-        <CustomerItem imgSrc="/images/client2.jpg" />
-        <CustomerItem imgSrc="/images/client1.jpg" />
-        <CustomerItem imgSrc="/images/client2.jpg" />
+        <CustomerItem imgSrc="/images/c1.png" />
+        <CustomerItem imgSrc="/images/c2.jpg" />
+        <CustomerItem imgSrc="/images/c3.png" />
+        <CustomerItem imgSrc="/images/c4.jpg" />
       </Slider>
     </div>
   );
