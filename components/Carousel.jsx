@@ -27,7 +27,7 @@ const Carousel = () => {
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="relative h-full w-full">
           <Image
-            src="/images/front.png"
+            src="/images/hero-slider-1.jpg"
             alt=""
             layout="fill"
             priority
@@ -57,7 +57,7 @@ const Carousel = () => {
               lovers. Join us for a delectable journey through the world of pure
               vegetarian cuisine.
             </p>
-            <button className="btn ">Order Now</button>
+            <button className="btn-primary ">Order Now</button>
           </div>
         </div>
       </Slider>

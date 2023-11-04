@@ -3,12 +3,12 @@ import Input from "./form/Input";
 import Title from "./ui/Title";
 import { useFormik } from "formik";
 import { reservationSchema } from "../schema/reservation";
-{
-}
+import axios from "axios";
 
 const Reservation = () => {
   const onSubmit = async (values, actions) => {
     await new Promise((resolve) => setTimeout(resolve, 4000));
+    // console.log(values);
     actions.resetForm();
   };
 
@@ -25,6 +25,27 @@ const Reservation = () => {
       validationSchema: reservationSchema,
     });
 
+  const handleCreate = async () => {
+    const formData = new FormData();
+    formData.append("upload_preset", "food-ordering");
+
+    try {
+      const newReserve = {
+        fullName: values.fullName, // Access fullName from Formik state
+        phoneNumber: values.phoneNumber,
+        email: values.email,
+        persons: values.persons,
+        dateTime: values.date, // Assuming date is the combined date and time
+      };
+
+      const res = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}/reservation`,
+        newReserve
+      );
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const inputs = [
     {
       id: 1,
@@ -87,7 +108,11 @@ const Reservation = () => {
               />
             ))}
           </div>
-          <button className="btn-primary mt-4" type="submit">
+          <button
+            className="btn-primary mt-4"
+            type="submit"
+            onClick={handleCreate}
+          >
             BOOK NOW
           </button>
         </form>

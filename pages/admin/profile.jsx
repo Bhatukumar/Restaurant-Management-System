@@ -7,6 +7,7 @@ import Category from "../../components/admin/Category";
 import Footer from "../../components/admin/Footer";
 import Order from "../../components/admin/Order";
 import Products from "../../components/admin/Products";
+import AddReserve from "../../components/admin/AddReserve";
 import { toast } from "react-toastify";
 
 const Profile = () => {
@@ -79,6 +80,15 @@ const Profile = () => {
             <button className="ml-1">Footer</button>
           </li>
           <li
+            className={`border w-full p-3 cursor-pointer hover:bg-indigo-800 hover:text-white transition-all ${
+              tabs === 4 && "bg-indigo-800 text-white"
+            }`}
+            onClick={() => setTabs(4)}
+          >
+            <i className="fa fa-window-maximize"></i>
+            <button className="ml-1">Reservation</button>
+          </li>
+          <li
             className={`border w-full p-3 cursor-pointer hover:bg-indigo-800 hover:text-white transition-all`}
             onClick={() => window.open("/", "_blank")}
           >
@@ -98,7 +108,7 @@ const Profile = () => {
           </li> */}
           <li
             className={`border w-full p-3 cursor-pointer hover:bg-indigo-800 hover:text-white transition-all ${
-              tabs === 4 && "bg-indigo-800 text-white"
+              tabs === 5 && "bg-indigo-800 text-white"
             }`}
             onClick={closeAdminAccount}
           >
@@ -111,6 +121,7 @@ const Profile = () => {
       {tabs === 1 && <Order />}
       {tabs === 2 && <Category />}
       {tabs === 3 && <Footer />}
+      {tabs === 4 && <AddReserve/>}
     </div>
   );
 };
