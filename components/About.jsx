@@ -4,9 +4,9 @@ import Title from "./ui/Title";
 const About = () => {
   return (
     <div className="bg-secondary py-14">
-      <div className="container mx-auto flex items-center text-white gap-20 justify-center flex-wrap-reverse">
+      <div className="container mx-auto flex items-center text-white gap-20 justify-center flex-wrap-reverse h-70">
         <div className="flex justify-center">
-          <div className="relative sm:w-[465px] sm:h-[500px]  flex justify-center w-[300px] h-[450px]">
+          <div className="relative sm:w-[430px] sm:h-[400px]  flex justify-center w-[460px] h-[480px]">
             <Image src="/images/foodie.png" alt="" layout="fill" />
           </div>
         </div>

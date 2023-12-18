@@ -10,8 +10,11 @@ import { useSession } from "next-auth/react";
 import { toast } from "react-toastify";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { usePDF } from 'react-to-pdf';
 
 const Cart = ({ userList }) => {
+  const { toPDF, targetRef } = usePDF({filename: 'page.pdf'});
+
   const { data: session } = useSession();
 
   const cart = useSelector((state) => state.cart);
@@ -42,7 +45,9 @@ const Cart = ({ userList }) => {
     });
     setProductState(productTitles);
   }, [cart.products]);
+  
   console.log(productState);
+  
   const createOrder = async () => {
     try {
       if (session) {
@@ -78,7 +83,7 @@ const Cart = ({ userList }) => {
   };
 
   return (
-    <div className="min-h-[calc(100vh_-_433px)]">
+    <div className="min-h-[calc(100vh_-_433px)]" ref={targetRef}>
       <div className="flex justify-between items-center md:flex-row flex-col">
         <div className="md:min-h-[calc(100vh_-_433px)] flex items-center flex-1 p-10 overflow-x-auto w-full justify-center">
           {cart.products.length > 0 ? (
@@ -173,11 +178,12 @@ const Cart = ({ userList }) => {
             >
               Make Payment
             </button>
-            {/* <button
+            <button
             className="btn-primary mt-4 md:w-auto w-52"
+            onClick={() => toPDF()}
             >
               PDF Generater
-            </button> */}
+            </button>
           </div>
         </div>
       </div>
