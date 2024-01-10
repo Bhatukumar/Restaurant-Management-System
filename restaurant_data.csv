@@ -1,0 +1,51 @@
+customer_id,product_id,product_name,rating
+46,7,Tacos,2
+80,8,Ice Cream,1
+54,11,Chicken Wings,1
+10,10,Soda,2
+20,5,Sushi,2
+52,8,Ice Cream,2
+73,10,Soda,3
+75,4,Salad,3
+49,9,Fries,3
+88,14,Coffee,2
+53,10,Soda,1
+62,7,Tacos,1
+30,15,Soup,3
+100,11,Chicken Wings,2
+72,15,Soup,4
+1,2,Burger,4
+36,11,Chicken Wings,2
+78,14,Coffee,5
+42,5,Sushi,2
+84,14,Coffee,1
+6,11,Chicken Wings,4
+55,3,Pasta,2
+30,2,Burger,1
+29,7,Tacos,4
+65,11,Chicken Wings,2
+76,7,Tacos,1
+5,3,Pasta,2
+56,5,Sushi,4
+60,14,Coffee,5
+38,1,Pizza,1
+44,2,Burger,5
+31,9,Fries,2
+20,6,Steak,2
+56,2,Burger,4
+95,8,Ice Cream,4
+43,13,Sandwich,4
+86,15,Soup,4
+56,15,Soup,2
+97,15,Soup,5
+39,11,Chicken Wings,5
+92,3,Pasta,2
+75,10,Soda,3
+57,1,Pizza,3
+50,11,Chicken Wings,5
+67,2,Burger,1
+71,6,Steak,3
+14,13,Sandwich,3
+77,11,Chicken Wings,3
+1,15,Soup,4
+20,15,Soup,5

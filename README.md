@@ -1,9 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 # Food Ordering Project
 
-![image](https://github.com/eminkmru/food-ordering-with-NextJS/assets/89755021/272ac072-0702-4c83-9a79-a09a2eb43b4c)
-
+![Screenshot 2023-11-04 222216](https://github.com/Bhatukumar/Restaurant-Management-System/assets/107792025/270fcaf8-5d11-42af-9a09-6fd92c9a3c55)
 
 Hello,
 
@@ -29,35 +26,29 @@ In addition to the core features taught by the course instructors, I added some 
 - Improved database queries for more efficient data processing with MongoDB.
 - Implemented the "Order Customization" feature, allowing users to personalize their orders.
 
+## SetUp
+
+1. Create .env file
+2. Create variable MONGODB_URI=mongodb+srv://{Username}:{Password}@restaurantmanagementdb.ke7wwid.mongodb.net/food-ordering?retryWrites=true&w=majority
+
+
 ## How to Use?
 
-1. Clone the project: `git clone https://github.com/your_username/food-ordering-project.git`
+1. Clone the project: `git clone https://github.com/Bhatukumar/Restaurant-Management-System.git`
 2. Install the necessary dependencies: `npm install`
 3. Start the project: `npm run dev`
 4. View the project in your browser at `http://localhost:3000`.
 
 ## Project Screenshot
 
-![image](https://github.com/eminkmru/food-ordering-with-NextJS/assets/89755021/f0e0ed7a-ead1-4070-abb9-f72bb2e5e7f9)
+![Screenshot 2023-12-16 152036](https://github.com/Bhatukumar/Restaurant-Management-System/assets/107792025/8130fe3b-03ef-449c-9745-839f65aa766c)
 
-![image](https://github.com/eminkmru/food-ordering-with-NextJS/assets/89755021/26da9d2a-53da-4689-a56f-be224b682bc1)
+![Screenshot 2023-11-03 131107](https://github.com/Bhatukumar/Restaurant-Management-System/assets/107792025/0b2d2551-4d6e-4d8c-a4b3-e70780adb616)
 
-![image](https://github.com/eminkmru/food-ordering-with-NextJS/assets/89755021/2a57c58c-ee7a-4bac-aedd-cc1e45ecf071)
+![Screenshot 2023-11-03 131107](https://github.com/Bhatukumar/Restaurant-Management-System/assets/107792025/1dac0d95-1442-4cdd-b01e-13a49312c2e4)
 
-![image](https://github.com/eminkmru/food-ordering-with-NextJS/assets/89755021/8fef5351-16cc-44fb-8f83-307575aecfd8)
+![Screenshot 2023-11-03 141208](https://github.com/Bhatukumar/Restaurant-Management-System/assets/107792025/dd8fc0b6-c538-4a20-9591-2950ed59c04c)
 
-![image](https://github.com/eminkmru/food-ordering-with-NextJS/assets/89755021/42f3646f-6b5f-472d-90b1-42937fd102cf)
-
-![image](https://github.com/eminkmru/food-ordering-with-NextJS/assets/89755021/35bb7f17-4e1f-474c-9e4c-c00e98529b22)
-
-![image](https://github.com/eminkmru/food-ordering-with-NextJS/assets/89755021/cbdcc75b-bfce-4d91-aea2-fd66abe41c5d)
-
-![image](https://github.com/eminkmru/food-ordering-with-NextJS/assets/89755021/5f884bea-0035-4da0-925f-acb4ca5b6610)
+![Screenshot 2023-11-03 141242](https://github.com/Bhatukumar/Restaurant-Management-System/assets/107792025/a347c64f-f255-4f41-876b-776bf2638af8)
 
 
-## Acknowledgments
-
-To explore the project and learn more, visit the GitHub page: [GitHub Project Page](https://github.com/your_username/food-ordering-project)
-
-Best regards,
-Emin Kumru

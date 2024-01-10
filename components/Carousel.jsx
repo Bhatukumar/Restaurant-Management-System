@@ -45,7 +45,7 @@ const Carousel = () => {
               prepared with the freshest ingredients.
             </p>
 
-            <button className="btn-primary">Order Now</button>
+            {/* <button className="btn-primary">Order Now</button> */}
           </div>
         </div>
         <div>
@@ -57,7 +57,7 @@ const Carousel = () => {
               lovers. Join us for a delectable journey through the world of pure
               vegetarian cuisine.
             </p>
-            <button className="btn-primary ">Order Now</button>
+            {/* <button className="btn-primary ">Order Now</button> */}
           </div>
         </div>
       </Slider>

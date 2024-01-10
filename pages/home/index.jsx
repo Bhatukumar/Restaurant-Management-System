@@ -12,8 +12,8 @@ const Index = ({ categoryList, productList }) => {
       <Carousel />
       <Campaigns />
       <MenuWrapper categoryList={categoryList} productList={productList} />
-      <About />
       <Reservation />
+      <About />
       <Customers />
     </React.Fragment>
   );
