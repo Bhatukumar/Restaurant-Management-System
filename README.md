@@ -1,10 +1,10 @@
-# Food Ordering Project
+# Resturant Management Project
 
 ![Screenshot 2023-11-04 222216](https://github.com/Bhatukumar/Restaurant-Management-System/assets/107792025/270fcaf8-5d11-42af-9a09-6fd92c9a3c55)
 
 Hello,
 
-I worked on the Food Ordering Project, which is a comprehensive web application developed using various technologies.
+I worked on the Restaurant Management Project, which is a comprehensive web application developed using various technologies.
 
 ## Project Content and Features
 
